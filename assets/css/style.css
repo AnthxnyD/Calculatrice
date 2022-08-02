@@ -3,7 +3,7 @@ body {
   justify-content: center;
   align-content: center;
   width: 350px;
-  background-color: #2196F3;
+  background-color: whitesmoke;
   flex-direction: column-reverse;
 }
 
@@ -12,27 +12,43 @@ body {
 }
 
 .container {
+  background-color: #1C1427;
   display: grid;
   align-content: center;
   justify-content: center;
   grid-template-rows: 50px 50px 50px 50px 50px;
   gap: 10px;
   padding: 10px;
+  box-sizing: border-box;
+  height: 360px;
+  width: 280px;
+  border: outset 10px #40394A;
+  margin-left: 228%;
+  margin-top: 300px;
 }
 
 button {
-  color: rgb(255, 255, 255);
+  color: whitesmoke;
   justify-content: center;
-  background: indigo;
+  background: #1C1427;
   font-size: 19px;
   box-sizing: border-box;
   height: 50px;
   width: 50px;
   font-family: inherit;
   outline: none;
-  border: inset 5px indigo;
+  border: outset 2.5px #40394A;
+  border-radius: 10%/50%;
   padding: 11px;
   overflow: hidden;
+}
+
+button:hover {
+  border: outset 2.5px whitesmoke;
+}
+
+#equal:hover {
+  background-color: blue;
 }
 
 .row {
@@ -41,9 +57,16 @@ button {
 }
 
 #txtDisplay {
-  border: inset 5px indigo;
+  color: whitesmoke;
+  border: inset 2.5px #40394A;
+  border-radius: 10%/15%;
+  background-color: #1C1427;
   box-sizing: border-box;
   height: 50px;
   width: 170px;
   margin-top: 10px;
+}
+
+#canc:hover {
+  background-color: green;
 }/*# sourceMappingURL=style.css.map */
