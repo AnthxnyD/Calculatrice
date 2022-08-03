@@ -1,5 +1,5 @@
 <h1 align="center">Hey! Welcome to my calculator project! 👋</h1>
-
+![Capture Projet](./assets/pictures/capture.png)
 <h2>Objectif :</h2>
 <ul>
   <li>Responsive</li>
