@@ -1,6 +1,6 @@
 <h1 align="center">Hey! Welcome to my calculator project! 👋</h1>
 
-![Capture Projet](Calculatrice/assets/Pictures/Capture.PNG)
+![Capture Projet](Calculatrice/assets/Pictures/Capture.png)
 
 <h2>Objectif :</h2>
 <ul>
