@@ -2,7 +2,7 @@
 
 ![Capture](https://github.com/AnthxnyD/Calculatrice/blob/main/assets/Pictures/Capture.PNG?raw=true)
 
-*Objectif :
+## Objectif :
 - Responsive
 - empty main
 - Color hover + scale
@@ -10,10 +10,10 @@
 
 
 
-*Bonus :
+## Bonus :
 - Light Mode
 
-## Link for my calculator project!
+### Link for my calculator project!
 
 
 [Go Calculator](https://anthxnyd.github.io/Calculatrice/)
