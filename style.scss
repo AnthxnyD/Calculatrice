@@ -1,5 +1,7 @@
+@import "darkmode";
 *{
-    
+    margin: 0 auto;
+   
 }
 body{
     //position:static;
@@ -8,15 +10,12 @@ body{
     justify-content: center;
     align-content: center;
     width: 350px;
-    background-color: whitesmoke;
+    height: 100vh;
+    background-image: linear-gradient(to top, #1C1427 0%, black 100%);
     flex-direction: column-reverse;
 
 }
 
-.col-9{
-    
-
-}
 .col-3{
     
     padding-top: 10px;
@@ -37,8 +36,7 @@ body{
     height: 360px;
     width: 280px;
     border: outset 10px #40394A;
-    margin-left: 228%;
-    margin-top: 300px;
+    margin-top: 150px;
     
     
 }
@@ -63,23 +61,39 @@ button {
 button:hover{
 
     border: outset 2.5px whitesmoke;
-
+    transform: scale(0.95);
 }
 #equal:hover{
 
     background-color: blue;
+    transform: scale(0.95);
 }
 
 .row{
 
-display:flex;
-gap:10px;
+    display:flex;
+    gap:10px;
 
+
+}
+.darkmode{
+color:whitesmoke;
+display: flex;
+margin-left: 63px;
+margin-top: -340px;
+box-sizing: border-box;
+    height: 20.1px;
+    width: 105px;
+border: outset 2.5px #40394A;
+align-items: center;
+border-radius: 10% / 15%;
+font-size: 0.9em;
+font-weight: 100;
 
 }
 #txtDisplay{
     color: whitesmoke;
-    border: inset 2.5px #40394A;
+    border: outset 2.5px #40394A;
     border-radius: 10% / 15%;
     background-color: #1C1427;
     box-sizing: border-box;
@@ -89,5 +103,6 @@ gap:10px;
 
 }
 #canc:hover{
+    transform: scale(0.95);
     background-color: green;
 }
