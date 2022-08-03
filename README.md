@@ -3,7 +3,7 @@
 <h2>Objectif :</h2>
 <ul>
   <li>Responsive</li>
-  <li>empty <main></li>
+  <li>empty main</li>
   <li>Color hover + scale</li>
   <li>KeyDown + Click</li>
 </ul>
