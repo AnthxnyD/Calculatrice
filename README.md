@@ -1,20 +1,27 @@
-<h1 align="center">Hey! Welcome to my calculator project! 👋</h1>
 
-![Capture Projet](https://github.com/AnthxnyD/Calculatrice/blob/main/assets/Pictures/Capture.PNG?raw=true)
-
-<h2>Objectif :</h2>
-<ul>
-  <li>Responsive</li>
-  <li>empty main</li>
-  <li>Color hover + scale</li>
-  <li>KeyDown + Click</li>
-</ul>
-<h2>Bonus :</h2>
-<ul>
-  <li>LightMode</li>
-</ul>
 
 <h2>Link for my calculator project!</h2>
 
 [Click here](https://anthxnyd.github.io/Calculatrice/)
 <br/>
+
+
+# Hey! Welcome to my calculator project! 👋
+
+![Capture](https://github.com/AnthxnyD/Calculatrice/blob/main/assets/Pictures/Capture.PNG?raw=true)
+
+*Objectif :
+-Responsive
+-empty main
+-Color hover + scale
+-KeyDown + Click
+
+
+
+*Bonus :
+-Light Mode
+
+##Link for my calculator project!
+
+
+[Go Calculator](https://anthxnyd.github.io/Calculatrice/)
