@@ -83,11 +83,13 @@ let isfloat = false;
 document.addEventListener("keydown", (e) => {
   const value = e.keyCode.toString();
   calculate(value);
+  e.target.blur()
 });
 
 document.addEventListener("click", (e) => {
   const value = e.target.dataset.key;
   calculate(value);
+  e.target.blur()
 });
 
 const calculate = (value) => {
