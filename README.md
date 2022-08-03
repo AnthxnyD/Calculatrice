@@ -2,18 +2,18 @@
 
 ![Capture](https://github.com/AnthxnyD/Calculatrice/blob/main/assets/Pictures/Capture.PNG?raw=true)
 
-*Objectif :
--Responsive
--empty main
--Color hover + scale
--KeyDown + Click
+* Objectif :
+- Responsive
+- empty main
+- Color hover + scale
+- KeyDown + Click
 
 
 
-*Bonus :
--Light Mode
+* Bonus :
+- Light Mode
 
-##Link for my calculator project!
+## Link for my calculator project!
 
 
 [Go Calculator](https://anthxnyd.github.io/Calculatrice/)
