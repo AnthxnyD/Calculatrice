@@ -1,11 +1,3 @@
-
-
-<h2>Link for my calculator project!</h2>
-
-[Click here](https://anthxnyd.github.io/Calculatrice/)
-<br/>
-
-
 # Hey! Welcome to my calculator project! 👋
 
 ![Capture](https://github.com/AnthxnyD/Calculatrice/blob/main/assets/Pictures/Capture.PNG?raw=true)
