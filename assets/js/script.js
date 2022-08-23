@@ -81,140 +81,64 @@ const Result = document.getElementById('txtDisplay');
 let isfloat = false;
 
 document.addEventListener("keydown", (e) => {
-  const value = e.keyCode.toString();
-  calculate(value);
-  e.target.blur()
+    const value = e.keyCode.toString();
+    calculate(value);
+    e.target.blur()
 });
 
 document.addEventListener("click", (e) => {
-  const value = e.target.dataset.key;
-  calculate(value);
-  e.target.blur()
+    const value = e.target.dataset.key;
+    calculate(value);
+    e.target.blur()
 });
 
 const calculate = (value) => {
-  if (listKeycode.includes(value)) {
-    switch (value) {
-      case "8":
-        Result.value = "";
-        break;
-      case "13":
-        const computeResult = (str) => {
-            return Function("return " + str)();
-          };
-          Result.value = computeResult(Result.value);
-        break;
-        case"107":
-            isfloat = false;
-            console.log(isfloat)
-        case"109":
-            isfloat = false;
-        case"106":
-            isfloat = false;
-        case"111":
-            isfloat = false;
-        case"110":
-        if(isfloat===true){
-            break;
-        }else{
-            
-        const indexKeycode = listKeycode.indexOf(value);
-        const touche = touches[indexKeycode];
-        Result.value += touche.innerHTML;
-            isfloat=false;  
+    if (listKeycode.includes(value)) {
+        switch (value) {
+            case "8": // Touche Effacer
+                Result.value = "";
+                break;
+            case "13": // Touche Enter
+                const computeResult = (str) => {
+                    return Function("return " + str)();
+                };
+                Result.value = computeResult(Result.value);
+                break;
+
+            case "107":// Touche Addition
+            case "109":// Touche Soustraction
+            case "106":// Touche Multiplication
+            case "111":// Touche Division
+                isfloat = false;
+            case "110": // Touche Ajout d'un point (.)
+                if (isfloat === true) {
+                    break;
+                } else {
+
+                    const indexKeycode = listKeycode.indexOf(value);
+                    const touche = touches[indexKeycode];
+                    Result.value += touche.innerHTML;
+                    isfloat = false;
+                }
+                break;
+
+            default:
+                const indexKeycode = listKeycode.indexOf(value);
+                const touche = touches[indexKeycode];
+                Result.value += touche.innerHTML;
+                console.log(touche);
         }
-        break;
-
-
-      default:
-        const indexKeycode = listKeycode.indexOf(value);
-        const touche = touches[indexKeycode];
-        Result.value += touche.innerHTML;
-        console.log(touche);
     }
-  }
 };
 
 window.addEventListener("error", (e) => {
-  alert("Something wrong : " + e.message);
+    alert("Something wrong : " + e.message);
 });
 
 //Darkmode
 
 const checkbox = document.getElementById("checkbox");
 checkbox.addEventListener("change", () => {
-  document.body.classList.toggle("dark");
-  
+    document.body.classList.toggle("dark");
+
 });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-//ANCIENNE VERSION FONCTIONNEL
-// var btn = document.querySelectorAll(".num");
-// var display=document.getElementById("txtDisplay");
-// var btncanc=document.getElementById("canc");
-// var currentOp=document.querySelectorAll(".operazione");
-// var resul=document.getElementById("equal");
-// var OP = null;
-
-// function pressnum(){
-//     var num = this.innerHTML;
-//     display.value=display.value+num;
-// }
-
-// for (let i = 0; i < btn.length; i++) {
-//     const btnNum = btn[i];
-//     btnNum.addEventListener("click", pressnum);
-// }
-// function cancel(){
-//     display.value= "";
-// }
-
-// btncanc.addEventListener("click", cancel);
-
-// function pressOp() {
-//     prevNumber = parseInt(display.value);
-//     currentOp = this.innerHTML;
-//     display.value = "";
-//   }
-  
-// for (let i = 0; i < currentOp.length; i++) {
-//     const Op = currentOp[i];
-//     Op.addEventListener("click", pressOp); 
-// }
-
-
-// function executeCalc() {
-//     var currentNumber = parseInt(display.value);
-//     var result;
-
-//     switch (currentOp) {
-//         case '+':
-//             result = prevNumber + currentNumber;
-//             break;
-//         case '-':
-//             result = prevNumber - currentNumber;
-//             break;
-//         case '/':
-//             result = prevNumber / currentNumber;
-//             break;
-//         case '*':
-//             result = prevNumber * currentNumber;
-//             break;
-//     }
-//     display.value = result;
-
-// }
-
-// resul.addEventListener("click", executeCalc);
